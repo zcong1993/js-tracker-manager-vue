@@ -9,7 +9,7 @@
 
 <script>
 import { createClickTracker } from '@zcong/js-tracker-manager';
-import tm from '../tracler';
+import tm from '../tracker';
 
 export default {
   name: 'Home',

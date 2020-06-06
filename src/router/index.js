@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import { createDurationTracker } from '@zcong/js-tracker-manager';
 import Home from '../views/Home.vue';
-import tm from '../tracler';
+import tm from '../tracker';
 
 Vue.use(VueRouter);
 
