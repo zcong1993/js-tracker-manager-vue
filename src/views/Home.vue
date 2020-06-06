@@ -1,18 +1,26 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <p></p>
+    <button @click="clickA">btn A</button>
+    <p>open console check tracker logs</p>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import { createClickTracker } from '@zcong/js-tracker-manager';
+import tm from '../tracler';
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld,
+  methods: {
+    clickA() {
+      const ct = createClickTracker({
+        eventName: 'clickBtnA',
+      });
+      tm.addClickTracker(ct);
+      console.log('a click');
+    },
   },
 };
 </script>

@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import { createDurationTracker } from '@zcong/js-tracker-manager';
 import Home from '../views/Home.vue';
+import tm from '../tracler';
 
 Vue.use(VueRouter);
 
@@ -24,6 +26,18 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes,
+});
+
+router.beforeEach((to, _, next) => {
+  tm.endAllDurationTrackers();
+  tm.setCurrentScreen(to.name || to.path);
+  const dt = createDurationTracker({
+    eventId: `view-duration-${to.path}`,
+    eventName: 'viewPage',
+    type: 'start',
+  });
+  tm.addDurationTracker(dt);
+  next();
 });
 
 export default router;

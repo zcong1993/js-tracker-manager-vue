@@ -1332,6 +1332,18 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
+"@zcong/hrtime@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@zcong/hrtime/-/hrtime-0.1.1.tgz#a4a4fb436d2bda1b78f5542a861fda90525581a0"
+  integrity sha512-Jurgic9bTc+8SESchr/HufsXWyN1Ll8gbzdtnn279sd88iY6C1CjPSvqmitx1t3180wi45+GDmUHkRk87YUNVQ==
+
+"@zcong/js-tracker-manager@^0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@zcong/js-tracker-manager/-/js-tracker-manager-0.5.2.tgz#2a0bc7938be1985521b99edaf37e8224d950f554"
+  integrity sha512-7ZU+bkTKxDVv9+XRZ72WS9P4AUcb0yMhMa9W2YDksajk1oqeIAWJWoFjnVBrn5G0hSbRbuRa5vnzruJ6kJSZLw==
+  dependencies:
+    "@zcong/hrtime" "^0.1.1"
+
 accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.7:
   version "1.3.7"
   resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.3.7.tgz#531bc726517a3b2b41f850021c6cc15eaab507cd"
