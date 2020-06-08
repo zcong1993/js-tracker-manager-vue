@@ -8,17 +8,17 @@
 </template>
 
 <script>
-import { createClickTracker } from '@zcong/js-tracker-manager';
+import { createEventTracker } from '@zcong/js-tracker-manager';
 import tm from '../tracker';
 
 export default {
   name: 'Home',
   methods: {
     clickA() {
-      const ct = createClickTracker({
+      const ct = createEventTracker({
         eventName: 'clickBtnA',
       });
-      tm.addClickTracker(ct);
+      tm.addEventTracker(ct);
       console.log('a click');
     },
   },

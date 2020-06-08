@@ -1337,10 +1337,10 @@
   resolved "https://registry.yarnpkg.com/@zcong/hrtime/-/hrtime-0.1.1.tgz#a4a4fb436d2bda1b78f5542a861fda90525581a0"
   integrity sha512-Jurgic9bTc+8SESchr/HufsXWyN1Ll8gbzdtnn279sd88iY6C1CjPSvqmitx1t3180wi45+GDmUHkRk87YUNVQ==
 
-"@zcong/js-tracker-manager@^0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@zcong/js-tracker-manager/-/js-tracker-manager-0.5.2.tgz#2a0bc7938be1985521b99edaf37e8224d950f554"
-  integrity sha512-7ZU+bkTKxDVv9+XRZ72WS9P4AUcb0yMhMa9W2YDksajk1oqeIAWJWoFjnVBrn5G0hSbRbuRa5vnzruJ6kJSZLw==
+"@zcong/js-tracker-manager@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@zcong/js-tracker-manager/-/js-tracker-manager-0.6.0.tgz#f4c0091a0c9ca0d27f7e43c60fc7abca9d479c1c"
+  integrity sha512-bOb3mglsVTm8qa97ADoa/IYdbFbEDDkg4nXqwvEW53h/IdS93VSJsmjOD83DKlshfbZyMAKS+nbqkRlAHPiL5A==
   dependencies:
     "@zcong/hrtime" "^0.1.1"
 
